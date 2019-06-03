@@ -43,6 +43,7 @@ nav a {
 }
 
 .portrait {
+  margin-top: 1em;
   width: 200px;
   border-radius: 50%;
 }
