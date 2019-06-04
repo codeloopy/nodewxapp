@@ -40,7 +40,6 @@ app.get('/help', (req, res) => {
 
 app.get('/help/*', (req, res) => {
   res.render('error', {
-    pageTitle: 'Help Page Not Found',
     title: 'Help Page Doesn\'t Exist',
     error: 'The page you are looking for cannot be found',
     author: 'Pedro'
@@ -83,12 +82,8 @@ app.get('/weather', (req, res) => {
 });
 
 
-app.get('/help/*', (req, res) => {
-  res.send('Help article not found');
-});
-
 app.get('*', (req, res) => {
-  res.render('404', {
+  res.render('fourofour', {
     pageTitle: '404 Page',
     title: 'OOPS!',
     error: 'Error',
